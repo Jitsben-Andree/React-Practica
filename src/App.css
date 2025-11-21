@@ -1,42 +1,51 @@
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Contenedor principal */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
   text-align: center;
+  color: #2d3748;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Lista */
+ol {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cada item */
+li {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1.1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Hover bonito */
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Texto dentro */
+li span {
+  font-weight: bold;
+  color: #2b6cb0;
 }
